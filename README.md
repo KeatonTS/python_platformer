@@ -7,9 +7,9 @@ This was a personal project made to showcase and practice my ability to use Obje
 
 Features include:
 
-Pausing
-Double Jump
-Wall Jump
-Coin Collecting
-Item Collecting
+Pausing,
+Double Jump,
+Wall Jump,
+Coin Collecting,
+Item Collecting,
 BG Parallax
