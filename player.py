@@ -1,6 +1,6 @@
 import pygame
-from random import randint
 from settings import *
+import secrets
 
 
 class Player(pygame.sprite.Sprite):
@@ -512,7 +512,7 @@ class Player(pygame.sprite.Sprite):
             self.player_idle_animation()
 
     def enemy_collision(self):
-        enemy_drop = randint(5, 9)
+        enemy_drop = secrets.SystemRandom().randint(5, 9)
         self.item_dropped = False
         keys = pygame.key.get_pressed()
         alt_player_rect = pygame.rect.Rect(self.rect.x + 27, self.rect.y + 10, self.width - 50, self.height - 25)
