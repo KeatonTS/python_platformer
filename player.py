@@ -307,10 +307,10 @@ class Player(pygame.sprite.Sprite):
     def cling_to_wall(self, direction):
         if direction == 'left':
             self.image = pygame.transform.flip(pygame.image.load(
-                f'graphics/player/wall_cling.png').convert_alpha(), True, False)
+                'graphics/player/wall_cling.png').convert_alpha(), True, False)
         elif direction == 'right':
             self.image = self.image = pygame.transform.flip(pygame.image.load(
-                f'graphics/player/wall_cling.png').convert_alpha(), False, False)
+                'graphics/player/wall_cling.png').convert_alpha(), False, False)
 
         self.GRAVITY -= 0.8
         self.GRAVITY -= self.GRAVITY - 4
